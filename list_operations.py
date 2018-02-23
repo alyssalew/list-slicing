@@ -96,6 +96,7 @@ def last_five(input_list):
     [15, 18, 21, 24, 27]
 
     """
+
     return input_list[-5:]
 
 
@@ -137,6 +138,7 @@ def inner_four_end(input_list):
     [12, 15, 18, 21]
 
     """
+
     return input_list[-6:-2]
 
 
@@ -166,6 +168,7 @@ def replace_third_and_last(input_list):
     True
 
     """
+
     input_list[2] = 37
     input_list[-1] = 37
 
@@ -187,7 +190,6 @@ def replace_middle(input_list):
     """
 
     input_list[2:-2] = [42, 37]
-    pass
 
 
 def delete_third_and_seventh(input_list):
@@ -201,11 +203,12 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-    del input_list[2]
-    del input_list[5]
-    #print input_list
-    pass
 
+    input_list[2:3] = []
+    #input_list[2] = "elephant"
+    input_list[5:6] = []
+
+    #print input_list
 
 def delete_middle(input_list):
     """Remove all elements from input_list except the first two and last two.
@@ -220,8 +223,8 @@ def delete_middle(input_list):
     True
 
     """
-    del input_list[2:-2]
-    pass
+
+    input_list[2:6] = []
 
 
 ##############################################################################
